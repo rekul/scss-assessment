@@ -1,4 +1,70 @@
 //scss stub for singleselect
 .SingleSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30%;
+    min-height: 400px;
+    align-items: center;
+    align-content: center;
+    // Using margins to center card is not the best way to do this, specially when there may be other items around the card
+    // however for the sake of completing this assignment tonight, i will use margins
+    margin: 30%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
 
+.SingleSelect-Question {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: solid 1px black;
+    margin: -69px 0px 90px 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #69a014;
+    border-radius: 8px;
+}
+
+.answer-key-grouping {
+    display: flex;
+    flex-direction: row;
+}
+
+.letterKeyOptions {
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.answer-button, .letter-button {
+    margin-bottom: 15px;
+    min-height: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.btn {
+    margin-bottom: 15px;
+    background-color: #ddd;
+    min-height: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.answerOptions, .letterKeyOptions {
+    display: flex;
+    flex-direction: column;
+    min-width: 25px;
+    font-size: 10px;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: #3e8e41;
+}
+
+.feedback {
+    margin-bottom: 20px;
 }
